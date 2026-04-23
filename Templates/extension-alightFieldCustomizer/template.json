@@ -1,0 +1,7 @@
+{
+  "name": "extension-alightFieldCustomizer",
+  "category": "extension",
+  "description": "SharePoint Framework Field Customizer extension with React framework with Alight preconfiguration",
+  "version": "1.0.0",
+  "spfxVersion": "1.22.2"
+}

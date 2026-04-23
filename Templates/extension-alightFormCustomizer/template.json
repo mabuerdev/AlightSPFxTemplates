@@ -1,0 +1,7 @@
+{
+  "name": "extension-alightFormCustomizer",
+  "category": "extension",
+  "description": "A SharePoint Framework Form Customizer extension with React and Alight preconfiguration",
+  "version": "1.0.0",
+  "spfxVersion": "1.22.2"
+}

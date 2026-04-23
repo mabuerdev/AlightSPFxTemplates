@@ -1,0 +1,7 @@
+{
+  "name": "webpart-alightFluentUI9",
+  "category": "webpart",
+  "description": "A React-based web part template for SPFx using Fluent UI 9, PNP.js and PNP SPFx-Controls React",
+  "version": "0.0.1",
+  "spfxVersion": "1.22.2"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "extension-alightAllicationCustomizer",
+  "category": "extension",
+  "description": "A SharePoint Framework Application Customizer extension template with Alight preconfiguration",
+  "version": "0.0.1",
+  "spfxVersion": "1.22.2"
+}

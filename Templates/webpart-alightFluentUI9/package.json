@@ -1,0 +1,57 @@
+{
+  "name": "<%= libraryName %>",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=22.14.0 < 23.0.0"
+  },
+  "scripts": {
+    "build": "heft test --clean --production && heft package-solution --production",
+    "start": "heft start --clean",
+    "clean": "heft clean",
+    "eject-webpack": "heft eject-webpack",
+    "_phase:build": "heft run --only build -- --clean",
+    "_phase:test": "heft run --only test -- --clean",
+    "_phase:package-solution": "heft run --only package-solution -- --clean"
+  },
+  "dependencies": {
+    "@fluentui/react-components": "^9.73.7",
+    "@fluentui/react-datepicker-compat": "^0.6.30",
+    "@fluentui/react-icons": "^2.0.317",
+    "@fluentui/react-migration-v8-v9": "^9.10.0",
+    "@fluentui/react-timepicker-compat": "^0.4.33",
+    "@microsoft/sp-component-base": "<%= spfxVersion %>",
+    "@microsoft/sp-core-library": "<%= spfxVersion %>",
+    "@microsoft/sp-lodash-subset": "<%= spfxVersion %>",
+    "@microsoft/sp-office-ui-fabric-core": "<%= spfxVersion %>",
+    "@microsoft/sp-property-pane": "<%= spfxVersion %>",
+    "@microsoft/sp-webpart-base": "<%= spfxVersion %>",
+    "@pnp/graph": "^4.18.0",
+    "@pnp/logging": "^4.18.0",
+    "@pnp/sp": "^4.18.0",
+    "@pnp/spfx-controls-react": "^3.24.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "tslib": "2.3.1"
+  },
+  "devDependencies": {
+    "@microsoft/eslint-config-spfx": "<%= spfxVersion %>",
+    "@microsoft/eslint-plugin-spfx": "<%= spfxVersion %>",
+    "@microsoft/sp-module-interfaces": "<%= spfxVersion %>",
+    "@microsoft/spfx-web-build-rig": "<%= spfxVersion %>",
+    "@rushstack/eslint-config": "4.6.4",
+    "@rushstack/heft": "^1.2.9",
+    "@types/heft-jest": "^1.0.6",
+    "@types/react": "17.0.45",
+    "@types/react-dom": "17.0.17",
+    "@types/webpack-env": "~1.15.2",
+    "@typescript-eslint/parser": "8.48.1",
+    "eslint": "8.57.1",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "typescript": "~5.8.3"
+  },
+  "resolutions": {
+    "@types/react": "17.0.45"
+  }
+}

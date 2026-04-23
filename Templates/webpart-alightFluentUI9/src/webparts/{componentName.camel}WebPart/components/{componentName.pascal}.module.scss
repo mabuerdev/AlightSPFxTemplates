@@ -1,0 +1,15 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.<%= componentName.camel %>webPartTitle {
+   div[class^="webPartTitle"] {
+      font-family: var(--fontFamilyCustomFont100, var(--fontFamilyBase));
+      overflow: hidden;
+      line-height: 48px;
+      font-size: 32px;
+      color: "[theme: themePrimary, default: #0078d7]";
+    }
+
+    textarea {
+      height: 50px;
+    }
+}
