@@ -3,8 +3,7 @@ import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
 import {
   type IPropertyPaneConfiguration,
-  PropertyPaneLabel,
-  PropertyPaneTextField
+  PropertyPaneLabel
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { IReadonlyTheme } from '@microsoft/sp-component-base';
@@ -18,6 +17,8 @@ import { createV9Theme } from "@fluentui/react-migration-v8-v9";
 import { teamsDarkTheme, teamsLightTheme, Theme, webDarkTheme, webLightTheme } from '@fluentui/react-components';
 import { getGraph, getSP } from '../../pnpjsConfig';
 import { format } from '../../helpers';
+import { SPFI } from '@pnp/sp';
+import { GraphFI } from '@pnp/graph';
 
 export interface I<%= componentName.pascal %>WebPartProps {
   title: string;
@@ -103,14 +104,6 @@ export default class <%= componentName.pascal %>WebPart extends BaseClientSideWe
             description: strings.PropertyPaneDescription
           },
           groups: [
-            {
-              groupName: strings.BasicGroupName,
-              groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
-                })
-              ]
-            },
             {
                 groupName: strings.AlightCredentials,
                 groupFields: [

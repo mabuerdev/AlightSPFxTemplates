@@ -3,6 +3,7 @@ declare interface I<%= componentName.pascal %>WebPartStrings {
     AlightCredentials: string;
     Author: string;
     VersionText: string;
+    PropertyPaneDescription: string;
 }
 
 declare module '<%= componentName.pascal %>WebPartStrings' {
