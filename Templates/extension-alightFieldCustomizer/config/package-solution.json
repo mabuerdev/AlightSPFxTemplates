@@ -8,9 +8,9 @@
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
-      "name": "",
-      "websiteUrl": "",
-      "privacyUrl": "",
+      "name": "Alight Consulting GmbH",
+      "websiteUrl": "https://www.alight.eu",
+      "privacyUrl": "https://alight.eu/datenschutzerklaerung/",
       "termsOfUseUrl": "",
       "mpnId": "Undefined-<%= spfxVersion %>"
     },

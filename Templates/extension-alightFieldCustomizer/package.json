@@ -15,7 +15,11 @@
     "_phase:package-solution": "heft run --only package-solution -- --clean"
   },
   "dependencies": {
-    "@fluentui/react": "^8.106.4",
+    "@fluentui/react-components": "^9.73.7",
+    "@fluentui/react-datepicker-compat": "^0.6.30",
+    "@fluentui/react-icons": "^2.0.317",
+    "@fluentui/react-migration-v8-v9": "^9.10.0",
+    "@fluentui/react-timepicker-compat": "^0.4.33",
     "@microsoft/decorators": "<%= spfxVersion %>",
     "@microsoft/sp-core-library": "<%= spfxVersion %>",
     "@microsoft/sp-listview-extensibility": "<%= spfxVersion %>",

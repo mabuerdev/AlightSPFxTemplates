@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Log, FormDisplayMode } from '@microsoft/sp-core-library';
+import { FormDisplayMode } from '@microsoft/sp-core-library';
 import { FormCustomizerContext } from '@microsoft/sp-listview-extensibility';
 
 import { FluentProvider, IdPrefixProvider, MessageBar, MessageBarBody, MessageBarTitle, Rating, Theme } from '@fluentui/react-components';
@@ -18,8 +18,6 @@ export interface I<%= componentName.pascal %>Props {
   sharePointContext: SPFI,
   graphContext: GraphFI
 }
-
-const LOG_SOURCE: string = '<%= componentName.pascal %>';
 
 export const  <%= componentName.pascal %> = (props:I<%= componentName.pascal %>Props): JSX.Element => {
   const [rating, setRating] = useState(5);
